@@ -1,11 +1,15 @@
 async function async1() {
     console.log(1)
     const result = await async2();
+    // const result1 = async2();
+    // console.log(result1,result)
     console.log(3)
 }
 
 async function async2() {
-    console.log(2)
+    await console.log(2)
+    console.log(7)
+    return 90
 }
 
 Promise.resolve().then(()=>{
@@ -18,6 +22,7 @@ setTimeout(()=>{
 
 async1()
 console.log(6)
+
 
 // 1,2,6,4,3,5
 function loop(){

@@ -9,9 +9,18 @@ var a = 10
 // console.log('c === ', c)
 // const c = 5
 
-const d = 4
-console.log()
+let d 
+console.log('d ====', d)
 
+// 如果声明const变量而不赋值就会报错
+// const e
+// console.log('d ====', e)
+
+function fn () {
+    var f;
+}
+
+console.log('f ====', fn)
 
 function variable(){
    
